@@ -28,7 +28,7 @@ const Page = () => {
 		}
 
 		fetchData(); // Call the fetchData function when the component mounts
-	}, []); // Empty dependency array ensures this effect runs once when the component mounts
+	}, [id]); // Empty dependency array ensures this effect runs once when the component mounts
 
 	return (
 		<div className="w-full bg-[#fff] text-black font-sans overflow-x-hidden flex">
