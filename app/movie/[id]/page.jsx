@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import Movie1 from "@/app/components/Movie1";
 import SideBar from "@/app/components/SideBar";
 import React, { useEffect, useState } from "react";
-import { API_URL, fetchApi, apikey } from "@/app/utils/fetchAPI";
+import { apikey } from "@/app/utils/fetchAPI";
 
 const Page = () => {
 	const { id } = useParams();
@@ -13,7 +13,7 @@ const Page = () => {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				const apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=c2b98508e3fc3f5cd908812aede8827e`;
+				const apiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`;
 				const response = await fetch(apiUrl);
 				const data = await response.json();
 				const movies = data;
