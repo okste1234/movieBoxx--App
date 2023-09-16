@@ -36,8 +36,8 @@ const DescriptionBox = () => {
 			<div className="my-4 w-[326px]">
 				<p className="text-base font-[500px]">
 					John Wick is on the run after killing a member of the international
-					assassins' guild, and with a $14 million price tag on his head, he is
-					the target of hit men and women everywhere.
+					assassins&apos; guild, and with a $14 million price tag on his head,
+					he is the target of hit men and women everywhere.
 				</p>
 			</div>
 
