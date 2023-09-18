@@ -23,13 +23,13 @@ const FeaturedMovie = ({ movies }) => {
 			</div>
 
 			{movies?.length > 0 ? (
-				<div className="w-3/6 sm:w-full cursor-pointer sm:grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-24 py-10 text-center">
+				<div className="px-5 sm:px-0 sm:w-full cursor-pointer sm:grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-24 pt-5 pb-10 sm:pt-10 sm:pb-10 text-center">
 					{movies.map((movie) => (
 						<MovieCard data-testid="movie-card" key={movie.id} movie={movie} />
 					))}
 				</div>
 			) : (
-				<div className=" py-10 w-full text-red-700/60">
+				<div className="px-10 py-10 w-full text-red-700/60">
 					<img
 						src="https://via.placeholder.com/400"
 						width={250}

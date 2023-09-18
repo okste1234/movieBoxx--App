@@ -54,7 +54,7 @@ const Footer = () => {
 					<p className="mx-6">Press Room</p>
 				</Link>
 			</div>
-			<div className="text-gray-500 font-bold text-lg py-9">
+			<div className="text-gray-500 font-bold text-lg py-9 px-3 text-center">
 				<p>© 2021 MovieBox by Adekunle Stephen Omorotimi</p>
 			</div>
 		</div>

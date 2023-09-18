@@ -21,11 +21,18 @@ const Navbar = () => {
 						</label>
 						<input
 							type="text"
-							className="w-full bg-transparent text-base placeholder:font-normal placeholder-white outline-none text-white font-bold"
+							className="hidden sm:block w-full bg-transparent text-base placeholder:font-normal placeholder-white outline-none text-white font-bold"
 							placeholder="What do you want to watch?"
 							value=""
 						/>
-						<button type="submit" aria-label="Search" className="">
+						<button
+							type="submit"
+							aria-label="Search"
+							className="flex items-center"
+						>
+							<h1 className="sm:hidden px-3 font-bold text-lg text-center">
+								Search
+							</h1>
 							<Image
 								src="/Search.svg"
 								width={16}

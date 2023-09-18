@@ -4,7 +4,7 @@ import React from "react";
 
 const MovieCard = ({ movie }) => {
 	return (
-		<Link href={`/movie/${movie.id}`} className="mb-20 sm:mb-2 text-start">
+		<Link href={`/movie/${movie.id}`} className="sm:mb-2 text-start">
 			<div className="relative">
 				<img
 					src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
@@ -24,7 +24,7 @@ const MovieCard = ({ movie }) => {
 			<div className="py-3">
 				<p className="text-gray-400 text-sm font-bold pt-2">
 					{movie.original_language}
-					<span className="gap-4" data-testid="movie-release-date">
+					<span className="pl-3" data-testid="movie-release-date">
 						{movie.release_date}
 					</span>
 				</p>
@@ -56,7 +56,7 @@ const MovieCard = ({ movie }) => {
 				</div>
 			</div>
 
-			<div className="text-gray-400 font-bold text-sm pt-2">
+			<div className="text-gray-400 font-bold text-sm pt-2 mb-16 sm:mb-0">
 				<p data-testid="movie-genre">Action, Adventure, Horror</p>
 			</div>
 		</Link>
